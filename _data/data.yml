@@ -46,7 +46,7 @@ education:
 #         Experience in this university:
 #         + First
 #         + Second
-
+    -
     - university: Ngee Ann Polytechnic
       time: 2015 - 2018
       major: Infomation Technology
@@ -60,32 +60,18 @@ experiences:
   display: true
   title: Experiences
   items:
-    - role: Backend Developer
-      time: 2018.03 - 2019.03
-      company: Second Company
+    - role: iOS Developer (Internship)
+      time: 2017.09 - 2018.02
+      company: Vanitee
       tag:
-      location: Beijing
+      location: Singapore
       details: |
         Experience in this company:
         + First
         + Second
-
-        ...
-
-    - role: Backend Developer
-      time: 2017.03 - 2018.03
-      company: First Company
-      tag: Remote, part-time
-      location: Beijing
-      details: |
-        Experience in this company:
-        + First
-        + Second
-
-        ...
 
 projects:
-  display: true
+  display: false
   title: Projects
   intro: |
     This is all the projects I'm involved in.
