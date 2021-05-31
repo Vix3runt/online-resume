@@ -1,31 +1,31 @@
 intro:
-  name: Foo Bar
-  title: Backend Developer
+  name: ZiAng He
+  title: 
   avatar:
-    display: true
+    display: false
     path: profile.png
 
 contact:
-  email: me@example.com
-  phone: +86-111-2222-3333
+  email: neverback.h@gmail.com
+  phone: +65-8332-1013
   wechat:
   whatsapp:
   telegram:
-  website: example.com
+  website: 
   medium:
   linkedin:
   googlescholar:
   researchgate:
-  github: github
+  github: 
   gitlab:
   bitbucket:
-  twitter: twitter
+  twitter: 
   stackoverflow:
   quora:
   goodreads:
 
 profile:
-  display: true
+  display: false
   title: Profile
   details: |
     It's your career profile, you can wirte markdown format text.
@@ -34,6 +34,28 @@ profile:
 
     ...
 
+education:
+  display: true
+  title: Education
+  items:
+    - university: Univercity of New South Wales
+      time: 2015 - 2018
+      major: Computer Science
+      degree: Bachelor
+#       details: 
+#         Experience in this university:
+#         + First
+#         + Second
+
+    - university: Ngee Ann Polytechnic
+      time: 2015 - 2018
+      major: Infomation Technology
+      degree: Degree
+#       details: |
+#         Experience in this university:
+#         + First
+#         + Second
+        
 experiences:
   display: true
   title: Experiences
@@ -96,32 +118,6 @@ skills:
       level: 80
     - name: Skill C
       level: 70
-
-education:
-  display: true
-  title: Education
-  items:
-    - university: Example University
-      time: 2015 - 2018
-      major: Machine Learning
-      degree: Master
-      details: |
-        Experience in this university:
-        + First
-        + Second
-
-        ...
-
-    - university: Example University
-      time: 2011 - 2015
-      major: Computer Science
-      degree: Bachelor
-      details: |
-        Experience in this university:
-        + First
-        + Second
-
-        ...
 
 certificates:
   display: true
