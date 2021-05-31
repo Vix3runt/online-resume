@@ -91,19 +91,18 @@ skills:
   display: true
   title: Skills
   details: |
-    Here is my skills:
-    + First
-    + Second
+    + Agile software development
+    + Data structure & algorithm
+    + Problem Solving & Analysis
+    + Python, Java Programming
 
-    ...
-
-  levels:
-    - name: Skill A
-      level: 90
-    - name: Skill B
-      level: 80
-    - name: Skill C
-      level: 70
+#   levels:
+#     - name: Skill A
+#       level: 90
+#     - name: Skill B
+#       level: 80
+#     - name: Skill C
+#       level: 70
 
 certificates:
   display: false
