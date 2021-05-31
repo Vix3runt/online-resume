@@ -39,9 +39,9 @@ education:
   title: Education
   items:
     - university: Univercity of New South Wales
-      time: 2015 - 2018
+      time: 2018 - 2020
       major: Computer Science
-      degree: Bachelor
+      degree: Bachelor Degree
 #       details: 
 #         Experience in this university:
 #         + First
@@ -49,7 +49,7 @@ education:
     - university: Ngee Ann Polytechnic
       time: 2015 - 2018
       major: Infomation Technology
-      degree: Degree
+      degree: Diploma
 #       details: |
 #         Experience in this university:
 #         + First
@@ -161,14 +161,12 @@ interests:
       link:
 
 evaluation:
-  display: false
+  display: true
   title: Self-evaluation
   details: |
-    Here is my self evaluation.
-    + First
-    + Second
-
-    ...
+    + Fast Learner & Self-motivate Person
+    + Engineering Background
+    + Easy to Develop Relationship with Customer
 
 footer:
   display: true
