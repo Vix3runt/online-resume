@@ -46,7 +46,6 @@ education:
 #         Experience in this university:
 #         + First
 #         + Second
-    -
     - university: Ngee Ann Polytechnic
       time: 2015 - 2018
       major: Infomation Technology
@@ -67,7 +66,8 @@ experiences:
       location: Singapore
       details: |
         Experience in this company:
-        + First
+        + As an iOS developer working on a new version of iOS app focus on the business side offering both iPhone and iPad compatibility.
+          The new iOS app was built from scratch with latest version of Swift language for better performance and easier maintenance. After working on it for about 2 months, the new iOS app was scraped for changing the business backend to a web based system.
         + Second
 
 projects:
