@@ -38,7 +38,7 @@ education:
   display: true
   title: Education
   items:
-    - university: Univercity of New South Wales
+    - university: University of New South Wales
       time: 2018 - 2020
       major: Computer Science
       degree: Bachelor Degree
