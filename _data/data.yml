@@ -1,5 +1,5 @@
 name: He ZiAng
-title: System Engineer | Manufacturing Software & Data Integration
+title: System Engineer | Backend APIs & System Integration
 headshot:
 
 contact:
@@ -12,7 +12,7 @@ profile:
   show: true
   title: Professional summary
   summary: |
-    System Engineer with experience since 2022 developing and supporting manufacturing applications, data pipelines, and equipment monitoring systems. Work spans React interfaces, backend APIs, Python data processing, Oracle and PostgreSQL integration, and quality inspection workflows.
+    System Engineer developing manufacturing APIs and integration services since 2022 using Node.js/Express, Python, Oracle, and PostgreSQL. Experience includes event-driven equipment monitoring, database-backed workflows, application troubleshooting, Docker-based UAT preparation, and React interfaces.
 
 education:
   order: 5
@@ -38,13 +38,12 @@ experience:
       company: Resonac HD Singapore
       location: Singapore
       summary: |
-        + Developed a visual inspection application for defect tagging, inspection judgements, configurable rules, audit history, and shift reports using React/TypeScript and Bun/Express. Prepared Docker-based UAT deployment with Oracle and inspection-image integration.
-        + Built the Guzik measurement-data platform with Python/Oracle ingestion and Excel reporting, plus React/Express applications for engineering test-plan configuration, target management, regeneration, and measurement review.
-        + Extended the OMS measurement-management system using ASP.NET/VB.NET, with instrument configuration, requests, acknowledgements, result uploads, and statistical process control (SPC) integration. Implemented pKerr instrument workflows and contributed to FTIR reporting.
-        + Developed Python equipment-log pipelines with processing configurations for 11 production lines, converting sputtering logs into Parquet datasets, extracting process cycles, tracking Oracle metadata, and archiving data. Built Flask visualization applications and added connection pooling and processing diagnostics.
-        + Developed and supported pump, motor-torque, and process-parameter monitoring using Python, PostgreSQL, MQTT, and web APIs. Implemented threshold alerts, PLC-connected cassette tracking, WebSocket broadcasts, and exception-log ingestion.
-        + Contributed to a shared Workplace-to-Teams migration documented as completed for 9 manufacturing alert integrations. Updated message formatting, caller configuration, and application integrations through a shared Microsoft Graph service.
-        + Enhanced a shared React job-request application and its API integration with approval routing, division-manager auto-approval, and email notifications.
+        + Developed Node.js/Express APIs backed by Oracle stored procedures for a measurement-data platform, supporting engineering configuration, data processing, and result review. Built Python ingestion and Excel reporting workflows and React interfaces.
+        + Built a Bun/Express visual inspection API with route permissions, transactional Oracle writes, audit history, and inspection and reporting workflows, alongside a React/TypeScript frontend. Prepared Docker-based UAT deployment with Oracle and inspection-image integration.
+        + Developed Python equipment-log pipelines configured for multiple production lines, converting manufacturing logs into Parquet datasets, extracting process cycles, tracking Oracle metadata, and archiving data. Added database connection pooling, processing diagnostics, and Flask visualization applications.
+        + Developed and supported equipment-monitoring services using Python, PostgreSQL, MQTT, and web APIs for pump condition, motor torque, and process parameters. Implemented event-driven threshold alerts, PLC-connected cassette tracking, WebSocket broadcasts, and exception-log ingestion.
+        + Extended an ASP.NET/VB.NET measurement-management system with instrument configuration, requests, acknowledgements, result uploads, and statistical process control (SPC) integration. Added instrument workflows and contributed to measurement reporting.
+        + Contributed to migrating manufacturing alert integrations from Workplace to Microsoft Teams. Updated application integrations, caller configuration, and message formatting through a shared Microsoft Graph service.
         + Used LLM coding assistants, including Codex and Claude Code, for development, refactoring, debugging, and test preparation, with review and verification of generated changes.
 
     - role: iOS Developer Intern
@@ -53,21 +52,20 @@ experience:
       tags:
       location: Singapore
       summary: |
-        + Worked on a Swift business application for iPhone and iPad. The project was discontinued when the business moved to a web-based system.
-        + Integrated React Native into the iOS application to support code sharing with Android.
+        + Worked on a Swift business application for iPhone and iPad and integrated React Native into the iOS application to support code sharing with Android.
 
 skill:
   order: 4
   show: true
   title: Technical skills
   summary: |
-    **Languages:** Python, JavaScript, TypeScript, SQL, VB.NET; earlier experience with Swift and Java.
+    **Backend and APIs:** Node.js, Express, Flask, Bun, ASP.NET, REST APIs, API authorization.
 
-    **Applications and APIs:** React, Express, Bun, Flask, ASP.NET, REST APIs.
+    **Databases and integration:** Oracle, PostgreSQL, stored procedures, connection pooling, MQTT, WebSockets, SPC integration.
 
-    **Data and integration:** Oracle, PostgreSQL, pandas, Parquet, MQTT, WebSockets, SPC integration.
+    **Languages and data processing:** Python, JavaScript, TypeScript, SQL, VB.NET, pandas, Parquet; earlier Swift and Java experience.
 
-    **Delivery and support:** Git, Docker, UAT preparation, database connection pooling, application logging, and troubleshooting.
+    **Delivery and interfaces:** Git, Docker, UAT preparation, application logging, troubleshooting, React.
 
 language:
   order: 9
