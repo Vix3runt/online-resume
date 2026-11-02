@@ -1,5 +1,5 @@
-title: Online Resume
-description: A minimalist online resume.
+title: He ZiAng | System Engineer
+description: System Engineer working on manufacturing applications, data pipelines, and equipment monitoring.
 url: https://vix3runt.github.io
 baseurl: /online-resume
 
@@ -9,13 +9,7 @@ languages:
     locale: en
     direction: ltr
     font:
-      preconnect:
-        - https://fonts.googleapis.com
-      crossorigin:
-        - https://fonts.gstatic.com
-      stylesheets:
-        - https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&display=swap
-      family: '"Noto Serif", ui-serif, Georgia, serif'
+      family: '"Segoe UI", "Helvetica Neue", Arial, sans-serif'
   zh:
     locale: zh
     direction: ltr
@@ -34,7 +28,7 @@ math: true                  # enable client-side math rendering
 theme_color: "#115E59"      # accent color
 
 allow_indexing: true        # allow indexing outside private mode
-show_theme_credit: true     # show theme credit in the footer
+show_theme_credit: false    # show theme credit in the footer
 
 analytics:
   umami:

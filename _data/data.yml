@@ -1,36 +1,18 @@
-name: ZiAng He
-title:
+name: He ZiAng
+title: System Engineer | Manufacturing Software & Data Integration
 headshot:
 
 contact:
   - email: neverback.h@gmail.com
-  - phone: +65-8332-1013
-  - wechat:
-  - whatsapp:
-  - telegram:
-  - website:
-  - medium:
-  - linkedin:
-  - googlescholar:
-  - researchgate:
-  - github:
-  - gitlab:
-  - bitbucket:
-  - twitter:
-  - stackoverflow:
-  - quora:
-  - goodreads:
+  - phone: +65-8953-1204
+  - ic: 'NRIC: S9784997H'
 
 profile:
   order: 1
-  show: false
-  title: Profile
+  show: true
+  title: Professional summary
   summary: |
-    It's your career profile, you can wirte markdown format text.
-    + First
-    + Second
-
-    ...
+    System Engineer with experience since 2022 developing and supporting manufacturing applications, data pipelines, and equipment monitoring systems. Work spans React interfaces, backend APIs, Python data processing, Oracle and PostgreSQL integration, and quality inspection workflows.
 
 education:
   order: 5
@@ -40,112 +22,52 @@ education:
     - institution: University of New South Wales
       date: 2018 - 2020
       major: Computer Science
-      degree: Bachelor Degree
-#       summary:
-#         Experience in this institution:
-#         + First
-#         + Second
+      degree: Bachelor's degree
     - institution: Ngee Ann Polytechnic
       date: 2015 - 2018
-      major: Infomation Technology
+      major: Information Technology
       degree: Diploma
-#       summary: |
-#         Experience in this institution:
-#         + First
-#         + Second
-        
+
 experience:
   order: 2
   show: true
-  title: Experiences
+  title: Work experience
   items:
-    - role: iOS Developer (Internship)
+    - role: System Engineer
+      date: 2022.03 - Present
+      company: Resonac HD Singapore
+      location: Singapore
+      summary: |
+        + Developed a visual inspection application for defect tagging, inspection judgements, configurable rules, audit history, and shift reports using React/TypeScript and Bun/Express. Prepared Docker-based UAT deployment with Oracle and inspection-image integration.
+        + Built the Guzik measurement-data platform with Python/Oracle ingestion and Excel reporting, plus React/Express applications for engineering test-plan configuration, target management, regeneration, and measurement review.
+        + Extended the OMS measurement-management system using ASP.NET/VB.NET, with instrument configuration, requests, acknowledgements, result uploads, and statistical process control (SPC) integration. Implemented pKerr instrument workflows and contributed to FTIR reporting.
+        + Developed Python equipment-log pipelines with processing configurations for 11 production lines, converting sputtering logs into Parquet datasets, extracting process cycles, tracking Oracle metadata, and archiving data. Built Flask visualization applications and added connection pooling and processing diagnostics.
+        + Developed and supported pump, motor-torque, and process-parameter monitoring using Python, PostgreSQL, MQTT, and web APIs. Implemented threshold alerts, PLC-connected cassette tracking, WebSocket broadcasts, and exception-log ingestion.
+        + Contributed to a shared Workplace-to-Teams migration documented as completed for 9 manufacturing alert integrations. Updated message formatting, caller configuration, and application integrations through a shared Microsoft Graph service.
+        + Enhanced a shared React job-request application and its API integration with approval routing, division-manager auto-approval, and email notifications.
+        + Used LLM coding assistants, including Codex and Claude Code, for development, refactoring, debugging, and test preparation, with review and verification of generated changes.
+
+    - role: iOS Developer Intern
       date: 2017.09 - 2018.02
       company: Vanitee
       tags:
       location: Singapore
       summary: |
-        Experience in this company:
-        + As an iOS developer working on a new version of iOS app focus on the business side offering both iPhone and iPad compatibility. The new iOS app was built from scratch with latest version of Swift language for better performance and easier maintenance. After working on it for about 2 months, the new iOS app was scraped for changing the business backend to a web based system.
-        + As an iOS developer working on adding React Native to the iOS app. The React Native help with cross platform development by sharing code for both iOS and Android version.
-
-project:
-  order: 3
-  show: false
-  title: Projects
-  summary: |
-    This is all the projects I'm involved in.
-
-  items:
-    - name: Foo
-      link: https://www.google.com
-      summary: |
-        Project Foo's detail, you can write markdown format text.
-
-    - name: Bar
-      link:
-      summary: |
-        Project Bar's detail, you can write markdown format text.
+        + Worked on a Swift business application for iPhone and iPad. The project was discontinued when the business moved to a web-based system.
+        + Integrated React Native into the iOS application to support code sharing with Android.
 
 skill:
   order: 4
   show: true
-  title: Skills
+  title: Technical skills
   summary: |
-    + Agile software development
-    + Data structure & algorithm
-    + Problem Solving & Analysis
-    + Python, Java Programming
+    **Languages:** Python, JavaScript, TypeScript, SQL, VB.NET; earlier experience with Swift and Java.
 
-#   levels:
-#     - name: Skill A
-#       level: 90
-#     - name: Skill B
-#       level: 80
-#     - name: Skill C
-#       level: 70
+    **Applications and APIs:** React, Express, Bun, Flask, ASP.NET, REST APIs.
 
-certificate:
-  order: 6
-  show: false
-  title: Certificates
-  items:
-    - name: Course Foo
-      issuer: Coursera
-      date: 2020
-      link:
-      summary: |
-        It's my Course Foo certificate by coursera.
-    - name: Course Bar
-      issuer: Coursera
-      date: 2020
-      link: https://www.google.com
-      summary: |
+    **Data and integration:** Oracle, PostgreSQL, pandas, Parquet, MQTT, WebSockets, SPC integration.
 
-publication:
-  order: 7
-  show: false
-  title: Publications
-  summary: |
-    This is all the books I wrote.
-
-  items:
-    - title: Foo in Action
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link: https://www.google.com
-    - title: The Art of Bar
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link:
-
-patent:
-  order: 8
-  show: false
-  title: Patents
-  summary: |
-    This is all my patents.
-    + 2020\. A patent name is here. CN123456, filed May 15, 2020, and issued July 20, 2020.
+    **Delivery and support:** Git, Docker, UAT preparation, database connection pooling, application logging, and troubleshooting.
 
 language:
   order: 9
@@ -156,21 +78,3 @@ language:
       level: Native
     - idiom: English
       level: Professional
-
-interest:
-  order: 10
-  show: false
-  title: Interests
-  items:
-    - item: Reading
-      link:
-    - item: Cooking
-      link:
-
-evaluation:
-  order: 11
-  show: true
-  title: Self-evaluation
-  summary: |
-    + Fast Learner & Self-motivated Person
-    + Easy to communicate with coworkers and customers

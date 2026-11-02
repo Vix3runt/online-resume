@@ -1,3 +1,6 @@
+ic:
+  title: Singapore NRIC
+  icon: fa-solid fa-id-card
 location:
   title: Location
   icon: fa-solid fa-location-dot

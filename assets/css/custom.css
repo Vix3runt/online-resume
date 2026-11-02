@@ -1,9 +1,214 @@
 @layer custom {
   :root {
-    --section-title-border-style: none; /* none | solid | dashed */
-    --section-title-background-color: var(--theme-color);
-    --section-title-background-opacity: 15%;
-    --section-icon-display: inline-block; /* none | inline-block */
-    --section-link-icon-display: inline-block; /* none | inline-block */
+    color-scheme: light;
+    --bg-primary: #f1f3f5;
+    --bg-secondary: #ffffff;
+    --fg-primary: #202b36;
+    --fg-secondary: #374553;
+    --fg-tertiary: #526170;
+    --resume-rule: #d4dbe1;
+    --content-max-width: 54rem;
+    --text-hg: 2.5rem;
+    --text-xl: 1.25rem;
+    --section-title-background-opacity: 0%;
+    --section-icon-display: none;
+    --section-link-icon-display: none;
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  main {
+    gap: var(--space-5);
+    padding: var(--space-7);
+    border-color: var(--resume-rule);
+    box-shadow: none;
+  }
+
+  .basic--centered .header {
+    text-align: start;
+  }
+
+  .basic .header .name {
+    font-weight: var(--font-semibold);
+    letter-spacing: -0.025em;
+  }
+
+  .basic .header .title {
+    margin-block-end: var(--space-2);
+    color: var(--theme-color);
+  }
+
+  .basic--centered .header .contact {
+    justify-content: flex-start;
+    font-size: var(--text-sm);
+  }
+
+  .contact-item i {
+    display: none;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: var(--resume-rule);
+    text-underline-offset: 0.2em;
+    overflow-wrap: anywhere;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--theme-color);
+    outline-offset: 3px;
+  }
+
+  .contact-item a {
+    display: inline-block;
+    padding-block: var(--space-1);
+  }
+
+  .section-title {
+    padding-block: 0 var(--space-2);
+    margin-block-end: var(--space-3);
+    border-block-end: 1px solid var(--resume-rule);
+    background: none;
+    color: var(--fg-primary);
+    font-weight: var(--font-semibold);
+  }
+
+  .section-title h2 {
+    font-weight: inherit;
+  }
+
+  .item-meta {
+    font-style: normal;
+    color: var(--fg-secondary);
+  }
+
+  .item-aside {
+    font-size: var(--text-sm);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .experience .items {
+    gap: var(--space-5);
+  }
+
+  .experience .item > .summary {
+    margin-block-start: var(--space-2);
+  }
+
+  .summary ul {
+    padding-inline-start: 1.15em;
+  }
+
+  .summary li + li {
+    margin-block-start: var(--space-2);
+  }
+
+  .skill .summary p + p {
+    margin-block-start: var(--space-2);
+  }
+
+  .education .items {
+    gap: var(--space-3);
+  }
+
+  footer {
+    font-size: var(--text-xs);
+  }
+
+  @media screen and (max-width: 50rem) {
+    main {
+      padding: var(--space-5);
+    }
+
+    .basic .header .contact {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .basic .header .name {
+      font-size: 2rem;
+    }
+
+    .contact-item a {
+      min-block-size: 44px;
+      align-content: center;
+    }
+  }
+}
+
+@layer print {
+  @media print {
+    :root {
+      --text-base: 10pt;
+      --text-sm: 9.5pt;
+      --text-xl: 12pt;
+      --text-hg: 24pt;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 9mm 13mm;
+    }
+
+    body {
+      line-height: 1.25;
+    }
+
+    main {
+      display: block;
+      padding: 0;
+      border: 0;
+    }
+
+    main > section + section {
+      margin-block-start: 6pt;
+    }
+
+    .basic .header .name {
+      font-size: var(--text-hg);
+    }
+
+    .section-title {
+      margin-block-end: 5pt;
+      padding-block-end: 3pt;
+    }
+
+    .experience .items {
+      display: block;
+    }
+
+    .experience .item + .item {
+      margin-block-start: 8pt;
+    }
+
+    .summary li + li,
+    .skill .summary p + p {
+      margin-block-start: 2pt;
+    }
+
+    .education .items {
+      gap: 5pt;
+    }
+
+    .summary li,
+    .education .item,
+    .basic {
+      break-inside: avoid-page;
+    }
+
+    p {
+      orphans: 2;
+      widows: 2;
+    }
+
+    .contact-item a {
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 }
