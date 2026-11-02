@@ -5,6 +5,7 @@ headshot:
 contact:
   - email: neverback.h@gmail.com
   - phone: +65-8953-1204
+  - linkedin: '[linkedin.com/in/zi-ang-he-1b370810b](https://www.linkedin.com/in/zi-ang-he-1b370810b)'
   - ic: 'NRIC: S9784997H'
 
 profile:
@@ -12,24 +13,24 @@ profile:
   show: true
   title: Professional summary
   summary: |
-    System Engineer developing manufacturing APIs and integration services since 2022 using Node.js/Express, Python, Oracle, and PostgreSQL. Experience includes event-driven equipment monitoring, database-backed workflows, application troubleshooting, Docker-based UAT preparation, and React interfaces.
+    System Engineer developing and supporting manufacturing software since 2022, with a focus on backend services, system integration, and equipment-data workflows for engineering and quality teams.
 
 education:
-  order: 5
+  order: 4
   show: true
   title: Education
   items:
     - institution: University of New South Wales
       date: 2018 - 2020
-      major: Computer Science
-      degree: Bachelor's degree
+      major: Computer Science (Artificial Intelligence)
+      degree: Bachelor of Science
     - institution: Ngee Ann Polytechnic
       date: 2015 - 2018
       major: Information Technology
       degree: Diploma
 
 experience:
-  order: 2
+  order: 3
   show: true
   title: Work experience
   items:
@@ -38,10 +39,10 @@ experience:
       company: Resonac HD Singapore
       location: Singapore
       summary: |
-        + Developed Node.js/Express APIs backed by Oracle stored procedures for a measurement-data platform, supporting engineering configuration, data processing, and result review. Built Python ingestion and Excel reporting workflows and React interfaces.
-        + Built a Bun/Express visual inspection API with route permissions, transactional Oracle writes, audit history, and inspection and reporting workflows, alongside a React/TypeScript frontend. Prepared Docker-based UAT deployment with Oracle and inspection-image integration.
-        + Developed Python equipment-log pipelines configured for multiple production lines, converting manufacturing logs into Parquet datasets, extracting process cycles, tracking Oracle metadata, and archiving data. Added database connection pooling, processing diagnostics, and Flask visualization applications.
-        + Developed and supported equipment-monitoring services using Python, PostgreSQL, MQTT, and web APIs for pump condition, motor torque, and process parameters. Implemented event-driven threshold alerts, PLC-connected cassette tracking, WebSocket broadcasts, and exception-log ingestion.
+        + Developed Node.js/Express APIs backed by stored procedures for a measurement-data platform, supporting engineering configuration, data processing, and result review. Built ingestion, Excel reporting, and web-interface workflows.
+        + Built a visual inspection API and frontend with route permissions, transactional database writes, audit history, reporting, and inspection-image access. Prepared Docker-based UAT deployment and database integration.
+        + Developed equipment-log pipelines for multiple production lines, converting manufacturing logs into Parquet datasets, extracting process cycles, tracking metadata, and archiving data. Added database connection pooling, processing diagnostics, and visualization applications.
+        + Developed and supported event-driven monitoring for pump condition, motor torque, and process parameters. Implemented threshold alerts, PLC-connected cassette tracking, MQTT integration, WebSocket broadcasts, and exception-log ingestion.
         + Extended an ASP.NET/VB.NET measurement-management system with instrument configuration, requests, acknowledgements, result uploads, and statistical process control (SPC) integration. Added instrument workflows and contributed to measurement reporting.
         + Contributed to migrating manufacturing alert integrations from Workplace to Microsoft Teams. Updated application integrations, caller configuration, and message formatting through a shared Microsoft Graph service.
         + Used LLM coding assistants, including Codex and Claude Code, for development, refactoring, debugging, and test preparation, with review and verification of generated changes.
@@ -55,20 +56,20 @@ experience:
         + Worked on a Swift business application for iPhone and iPad and integrated React Native into the iOS application to support code sharing with Android.
 
 skill:
-  order: 4
+  order: 2
   show: true
   title: Technical skills
   summary: |
-    **Backend and APIs:** Node.js, Express, Flask, Bun, ASP.NET, REST APIs, API authorization.
+    **Backend and APIs:** Node.js, Express, Flask, Bun, ASP.NET, REST APIs.
 
-    **Databases and integration:** Oracle, PostgreSQL, stored procedures, connection pooling, MQTT, WebSockets, SPC integration.
+    **Databases and integration:** Oracle, PostgreSQL, SQL, MQTT, WebSockets, SPC integration.
 
-    **Languages and data processing:** Python, JavaScript, TypeScript, SQL, VB.NET, pandas, Parquet; earlier Swift and Java experience.
+    **Languages and data processing:** Python, JavaScript, TypeScript, VB.NET, pandas, Parquet; earlier Swift and Java experience.
 
-    **Delivery and interfaces:** Git, Docker, UAT preparation, application logging, troubleshooting, React.
+    **Delivery and interfaces:** Git, Docker, React.
 
 language:
-  order: 9
+  order: 5
   show: true
   title: Languages
   items:
