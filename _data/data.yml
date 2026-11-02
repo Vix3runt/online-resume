@@ -1,33 +1,31 @@
-intro:
-  name: ZiAng He
-  title: 
-  avatar:
-    display: false
-    path: profile.png
+name: ZiAng He
+title:
+headshot:
 
 contact:
-  email: neverback.h@gmail.com
-  phone: +65-8332-1013
-  wechat:
-  whatsapp:
-  telegram:
-  website: 
-  medium:
-  linkedin:
-  googlescholar:
-  researchgate:
-  github: 
-  gitlab:
-  bitbucket:
-  twitter: 
-  stackoverflow:
-  quora:
-  goodreads:
+  - email: neverback.h@gmail.com
+  - phone: +65-8332-1013
+  - wechat:
+  - whatsapp:
+  - telegram:
+  - website:
+  - medium:
+  - linkedin:
+  - googlescholar:
+  - researchgate:
+  - github:
+  - gitlab:
+  - bitbucket:
+  - twitter:
+  - stackoverflow:
+  - quora:
+  - goodreads:
 
 profile:
-  display: false
+  order: 1
+  show: false
   title: Profile
-  details: |
+  summary: |
     It's your career profile, you can wirte markdown format text.
     + First
     + Second
@@ -35,61 +33,65 @@ profile:
     ...
 
 education:
-  display: true
+  order: 5
+  show: true
   title: Education
   items:
-    - university: University of New South Wales
-      time: 2018 - 2020
+    - institution: University of New South Wales
+      date: 2018 - 2020
       major: Computer Science
       degree: Bachelor Degree
-#       details: 
-#         Experience in this university:
+#       summary:
+#         Experience in this institution:
 #         + First
 #         + Second
-    - university: Ngee Ann Polytechnic
-      time: 2015 - 2018
+    - institution: Ngee Ann Polytechnic
+      date: 2015 - 2018
       major: Infomation Technology
       degree: Diploma
-#       details: |
-#         Experience in this university:
+#       summary: |
+#         Experience in this institution:
 #         + First
 #         + Second
         
-experiences:
-  display: true
+experience:
+  order: 2
+  show: true
   title: Experiences
   items:
     - role: iOS Developer (Internship)
-      time: 2017.09 - 2018.02
+      date: 2017.09 - 2018.02
       company: Vanitee
-      tag:
+      tags:
       location: Singapore
-      details: |
+      summary: |
         Experience in this company:
         + As an iOS developer working on a new version of iOS app focus on the business side offering both iPhone and iPad compatibility. The new iOS app was built from scratch with latest version of Swift language for better performance and easier maintenance. After working on it for about 2 months, the new iOS app was scraped for changing the business backend to a web based system.
         + As an iOS developer working on adding React Native to the iOS app. The React Native help with cross platform development by sharing code for both iOS and Android version.
 
-projects:
-  display: false
+project:
+  order: 3
+  show: false
   title: Projects
-  intro: |
+  summary: |
     This is all the projects I'm involved in.
 
   items:
     - name: Foo
       link: https://www.google.com
-      details: |
+      summary: |
         Project Foo's detail, you can write markdown format text.
 
     - name: Bar
       link:
-      details: |
+      summary: |
         Project Bar's detail, you can write markdown format text.
 
-skills:
-  display: true
+skill:
+  order: 4
+  show: true
   title: Skills
-  details: |
+  summary: |
     + Agile software development
     + Data structure & algorithm
     + Problem Solving & Analysis
@@ -103,26 +105,28 @@ skills:
 #     - name: Skill C
 #       level: 70
 
-certificates:
-  display: false
+certificate:
+  order: 6
+  show: false
   title: Certificates
   items:
     - name: Course Foo
-      authority: Coursera
-      time: 2020
+      issuer: Coursera
+      date: 2020
       link:
-      details: |
+      summary: |
         It's my Course Foo certificate by coursera.
     - name: Course Bar
-      authority: Coursera
-      time: 2020
+      issuer: Coursera
+      date: 2020
       link: https://www.google.com
-      details: |
+      summary: |
 
-publications:
-  display: false
+publication:
+  order: 7
+  show: false
   title: Publications
-  intro: |
+  summary: |
     This is all the books I wrote.
 
   items:
@@ -135,15 +139,17 @@ publications:
       conference: Foobar, 2019
       link:
 
-patents:
-  display: false
+patent:
+  order: 8
+  show: false
   title: Patents
-  details: |
+  summary: |
     This is all my patents.
     + 2020\. A patent name is here. CN123456, filed May 15, 2020, and issued July 20, 2020.
 
-languages:
-  display: true
+language:
+  order: 9
+  show: true
   title: Languages
   items:
     - idiom: Chinese
@@ -151,8 +157,9 @@ languages:
     - idiom: English
       level: Professional
 
-interests:
-  display: false
+interest:
+  order: 10
+  show: false
   title: Interests
   items:
     - item: Reading
@@ -161,14 +168,9 @@ interests:
       link:
 
 evaluation:
-  display: true
+  order: 11
+  show: true
   title: Self-evaluation
-  details: |
+  summary: |
     + Fast Learner & Self-motivated Person
     + Easy to communicate with coworkers and customers
-
-footer:
-  display: true
-
-close: >
-  Sorry, my resume has been hidden.

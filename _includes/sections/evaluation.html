@@ -1,0 +1,10 @@
+{%- assign section = include.section -%}
+<section class="evaluation">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-hand-sparkles" aria-hidden="true"></i>
+    <h2>{{ section.title | escape }}</h2>
+  </div>
+  <div class="section-content">
+    {%- if section.summary %}<div class="summary">{{ section.summary | markdownify }}</div>{% endif %}
+  </div>
+</section>

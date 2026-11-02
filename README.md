@@ -1,67 +1,105 @@
-# online-resume
+<h1 align="center">online-resume</h1>
 
-[English](README.md) | [简体中文](README_CN.md)
+<p align="center">
+  <a href="https://github.com/tarrex/online-resume/blob/main/LICENSE"><img src="https://img.shields.io/github/license/tarrex/online-resume?style=flat-square" alt="GitHub License"></a>
+  <a href="https://github.com/tarrex/online-resume/forks"><img src="https://img.shields.io/github/forks/tarrex/online-resume?style=flat-square" alt="GitHub forks"></a>
+  <a href="https://github.com/tarrex/online-resume/stargazers"><img src="https://img.shields.io/github/stars/tarrex/online-resume?style=flat-square" alt="GitHub stars"></a>
+  <a href="https://tarrex.github.io/online-resume"><img src="https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Ftarrex.github.io%2Fonline-resume" alt="Demo website"></a>
+</p>
 
+<h4 align="center">A minimalist Jekyll theme for online, print, and PDF resumes.</h4>
+
+## Features
+
+- Resume content managed in YAML with Markdown support.
+- Modular and configurable resume sections.
+- Responsive and print-friendly layouts for web and PDF.
+- Multilingual support with language-specific fonts.
+- Optional math rendering with KaTeX or MathJax.
+- Customizable theme colors, fonts, and styles.
+- Privacy mode and search-engine indexing controls.
+- Easy deployment to GitHub Pages and other static hosting platforms.
+
+
+## Requirements
+
+- Jekyll `4.4.1`.
+- Ruby `2.7` or later; Ruby `3.4` is used by the deployment workflow.
+- Bundler, or the `jekyll/jekyll:latest` Docker image.
+
+The resolved Jekyll and gem versions are committed in `Gemfile.lock`. The Docker tag is only a runtime environment; the lockfile is the reproducible dependency contract.
+
+## Create your resume
+
+Fork or copy this repository, then edit:
+
+- `_data/data.yml`: resume content.
+- `images/profile.png`: profile image.
+- `_config.yml`: languages, fonts, integrations, and theme settings.
+- `assets/css/custom.css`: optional style overrides.
+
+Preview with Docker:
+
+```bash
+docker run --rm --volume "$PWD:/srv/jekyll" --publish 4000:4000 \
+  jekyll/jekyll:latest \
+  bundle exec jekyll serve --host 0.0.0.0 --livereload
+```
+
+Open <http://localhost:4000/>.
+
+## Resume data
+
+Edit `_data/data.yml` to update your profile, contact details, and resume sections. Use `show` to enable a section, `order` to position it, and `summary` for Markdown content. Empty optional values are not displayed. The comments in the data file document the available fields and contact formats.
+
+## Configuration
+
+The main settings in `_config.yml` are:
+
+- `url` and `baseurl` for the deployed site address;
+- `private` and `message`;
+- `allow_indexing` and `show_theme_credit`;
+- `theme_color`;
+- `default_language` and `languages`;
+- `math` and `features.math`;
+- `analytics.umami`, `analytics.google`, and `analytics.cloudflare`.
+
+Analytics are emitted only in a production build and remain disabled by default. Math rendering supports `katex` and `mathjax`; keep the configured CDN version pinned.
+
+## Multiple languages
+
+`index.html` selects its resume data and language through front matter. To add another language, create a root-level page such as `zh.html`:
+
+```yaml
 ---
+layout: default
+data: data
+lang: zh
+---
+```
 
-Yet another resume template based on Jekyll. You can write your resume using Markdown, it will be rendered into HTML and can be printed as PDF file.
+This reuses `_data/data.yml` with the `zh` locale, font, direction, and date settings from `_config.yml` and `_data/i18n.yml`.
 
-Features:
+For independently translated content, copy the data file:
 
-+ Easy to use/edit/hide
-+ Jekyll + Markdown + Github Pages
-+ Multiple languages
-+ Multiple skins
-+ Content modular
-+ Responsive display
-+ Print-friendly
+```bash
+cp _data/data.yml _data/data_zh.yml
+```
 
-## Getting Started
+Then change the page's `data` value:
 
-### Usage
+```yaml
+data: data_zh
+```
 
-#### Quickly
+Add the corresponding locale, direction, and font settings under `languages` in `_config.yml`. Use `direction: rtl` for a right-to-left language.
 
-Fork this repository:
+## Deploy to GitHub Pages
 
-![](https://github.com/tarrex/online-resume/raw/master/assets/images/fork.png "fork this repository")
+The repository includes `.github/workflows/jekyll.yml`. In the repository's Pages settings, choose **GitHub Actions** as the publishing source. Pushes to `main` build with the locked Jekyll version and deploy the generated artifact; pull requests build without deploying.
 
-Edit the YAML file located in `_data/data.yml`:
+The workflow uses the Pages-provided base path, so project sites such as `https://USERNAME.github.io/online-resume/` resolve assets correctly.
 
-![](https://github.com/tarrex/online-resume/raw/master/assets/images/edit.png "edit the yaml file")
+## Related theme
 
-Setting the Github pages source branch in `settings -> Github Pages -> source`, select `master branch`:
-
-![](https://github.com/tarrex/online-resume/raw/master/assets/images/source.png "select github pages source branch")
-
-Wait a little while, open `https://YOUR_GITHUB_USERNAME.github.io/online-resume` in your browser. You can see your resume.
-
-with profile photo:
-
-![](https://github.com/tarrex/online-resume/raw/master/assets/images/resume1.png "resume with profile photo")
-
-without profile photo:
-
-![](https://github.com/tarrex/online-resume/raw/master/assets/images/resume2.png "resume without profile photo")
-
-If you want to print your resume, just press the shortcut of print. Also, it can be saved as a PDF file.
-
-#### Locally
-
-If you want to use it locally, you should clone this repository then just like deploying a regular Jekyll website.
-
-### Customization
-
-+ `_data/data.yml`: All the resume content.
-+ `assets/images/profile.png`: Your profile photo.
-+ `_config.yml`: Site's general settings.
-+ `index.html`: Change the resume content's display order.
-+ `_sass/_base.scss`: Change the resume display style.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Others
-
-+ Hugo Version: [hugo-theme-online-resume](https://github.com/tarrex/hugo-theme-online-resume)
+- [Hugo edition](https://github.com/tarrex/hugo-theme-online-resume)

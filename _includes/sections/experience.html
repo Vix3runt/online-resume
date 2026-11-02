@@ -1,0 +1,55 @@
+{%- assign section = include.section -%}
+<section class="experience">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-briefcase" aria-hidden="true"></i>
+    <h2>{{ section.title | escape }}</h2>
+  </div>
+  <div class="section-content">
+    {%- if section.summary %}
+      <div class="summary">
+        {{ section.summary | markdownify }}
+      </div>
+    {%- endif %}
+    {%- if section.items %}
+      <div class="items">
+        {%- for item in section.items %}
+          <div class="item">
+            {%- if item.company %}
+              <div class="item-line">
+                <div class="company item-title item-inline">
+                  {%- if item.link %}
+                    <a href="{{ item.link | escape }}">{{ item.company }}</a>
+                  {%- else %}
+                    <span>{{ item.company }}</span>
+                  {%- endif %}
+                  {%- if item.tags %}
+                    <span class="item-tags">[{{ item.tags | escape }}]</span>
+                  {%- endif %}
+                </div>
+                <div class="date item-aside item-aside--nowrap">
+                  <span>{{ item.date | escape }}</span>
+                </div>
+              </div>
+              <div class="item-line">
+                <div class="role item-meta">
+                  <span>{{ item.role | escape }}</span>
+                </div>
+                {%- if item.location %}
+                  <div class="location item-aside item-inline">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <span>{{ item.location | escape }}</span>
+                  </div>
+                {%- endif %}
+              </div>
+              {%- if item.summary %}
+                <div class="summary">
+                  {{ item.summary | markdownify }}
+                </div>
+              {%- endif %}
+            {%- endif %}
+          </div>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+  </div>
+</section>

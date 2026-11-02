@@ -1,0 +1,21 @@
+{%- assign resume = include.resume -%}
+{%- assign section_names = "profile,experience,project,skill,education,course,certificate,publication,award,patent,organization,language,interest,evaluation,reference" | split: "," -%}
+{%- assign section_orders = "" | split: "" -%}
+{%- for section_name in section_names -%}
+  {%- assign section = resume[section_name] -%}
+  {%- if section and section.show -%}
+    {%- assign section_order = section.order | default: 1 | plus: 0 -%}
+    {%- assign section_orders = section_orders | push: section_order -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign section_orders = section_orders | sort | uniq -%}
+{%- for section_order in section_orders -%}
+  {%- for section_name in section_names -%}
+    {%- assign section = resume[section_name] -%}
+    {%- assign current_order = section.order | default: 1 | plus: 0 -%}
+    {%- if section and section.show and current_order == section_order -%}
+      {%- capture partial_name -%}sections/{{ section_name }}.html{%- endcapture -%}
+      {%- include {{ partial_name }} section=section resume=resume -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}

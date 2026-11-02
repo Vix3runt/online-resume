@@ -1,0 +1,20 @@
+{%- assign section = include.section -%}
+<section class="language">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-earth-americas" aria-hidden="true"></i>
+    <h2>{{ section.title | escape }}</h2>
+  </div>
+  <div class="section-content">
+    {%- if section.summary %}<div class="summary">{{ section.summary | markdownify }}</div>{% endif %}
+    {%- if section.items %}
+      <div class="items items--inline">
+        {%- for item in section.items %}
+          <div class="item">
+            <span>{{ item.idiom | escape }}</span>
+            {%- if item.level %}<small>[{{ item.level | escape }}]</small>{% endif %}
+          </div>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+  </div>
+</section>

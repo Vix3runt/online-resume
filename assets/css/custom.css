@@ -1,0 +1,9 @@
+@layer custom {
+  :root {
+    --section-title-border-style: none; /* none | solid | dashed */
+    --section-title-background-color: var(--theme-color);
+    --section-title-background-opacity: 15%;
+    --section-icon-display: inline-block; /* none | inline-block */
+    --section-link-icon-display: inline-block; /* none | inline-block */
+  }
+}

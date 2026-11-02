@@ -1,0 +1,35 @@
+{%- assign engine = site.features.math.engine | default: "katex" | downcase -%}
+{%- assign version = site.features.math.version -%}
+{%- capture package_version -%}{% if version %}@{{ version }}{% endif %}{%- endcapture -%}
+{%- if engine == "katex" %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex{{ package_version }}/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex{{ package_version }}/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex{{ package_version }}/dist/contrib/mhchem.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex{{ package_version }}/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '\\[', right: '\\]', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false }
+        ],
+        throwOnError: false
+      });
+    });
+  </script>
+{%- elsif engine == "mathjax" %}
+  <script>
+    MathJax = {
+      loader: { load: ['[tex]/mhchem', '[tex]/physics'] },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        packages: {'[+]': ['mhchem', 'physics']}
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax{{ package_version }}/tex-chtml.js"></script>
+{%- else %}
+  <!-- Unsupported math engine: {{ engine | escape }} -->
+{%- endif %}

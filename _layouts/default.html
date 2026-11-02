@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en" }}">
-
-    <head>
-        {% include head.html %}
-    </head>
-
-    <body>
-        {{ content }}
-    </body>
-
+{%- assign data_file = page.data | default: "data" -%}
+{%- assign resume = site.data[data_file] -%}
+{%- assign language_code = page.lang | default: site.default_language | default: "en" -%}
+{%- assign language = site.languages[language_code] -%}
+<!doctype html>
+<html lang="{{ language.locale | default: language_code | escape }}" dir="{{ page.direction | default: language.direction | default: "ltr" | escape }}">
+  <head>
+    {%- include head.html resume=resume language=language language_code=language_code -%}
+  </head>
+  <body>
+    <main>
+      {%- if site.private != true -%}
+        {%- include sections/basic.html resume=resume -%}
+        {%- include resume.html resume=resume -%}
+      {%- else -%}
+        {%- include sections/private.html -%}
+      {%- endif -%}
+    </main>
+    {%- include footer.html resume=resume language_code=language_code -%}
+  </body>
 </html>

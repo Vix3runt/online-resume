@@ -1,0 +1,15 @@
+{%- assign font = include.language.font -%}
+{%- for href in font.preconnect %}
+  <link rel="preconnect" href="{{ href | escape }}">
+{%- endfor %}
+{%- for href in font.crossorigin %}
+  <link rel="preconnect" href="{{ href | escape }}" crossorigin>
+{%- endfor %}
+{%- for href in font.stylesheets %}
+  {%- assign start = href | slice: 0, 2 -%}
+  {%- if start == "//" or href contains "://" %}
+    <link rel="stylesheet" href="{{ href | escape }}">
+  {%- else %}
+    <link rel="stylesheet" href="{{ href | relative_url }}">
+  {%- endif %}
+{%- endfor %}

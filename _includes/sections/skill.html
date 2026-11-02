@@ -1,0 +1,44 @@
+{%- assign section = include.section -%}
+<section class="skill">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-toolbox" aria-hidden="true"></i>
+    <h2>{{ section.title | escape }}</h2>
+  </div>
+  <div class="section-content">
+    {%- if section.summary %}
+      <div class="summary">
+        {{ section.summary | markdownify }}
+      </div>
+    {%- endif %}
+    {%- if section.items %}
+      <div class="items">
+        {%- for item in section.items %}
+          <div class="item">
+            <div class="skill-name"><span>{{ item.name }}</span></div>
+            <div class="skill-level">
+              {%- for level in (1..5) %}
+                {%- if level <= item.level %}
+                  <i class="fa-solid fa-circle" aria-hidden="true"></i>
+                {%- else %}
+                  <i class="fa-regular fa-circle" aria-hidden="true"></i>
+                {%- endif %}
+              {%- endfor %}
+            </div>
+          </div>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+    {%- if section.groups %}
+      <div class="groups">
+        {%- for group in section.groups %}
+          <div class="group">
+            <div class="group-name"><span>{{ group.name }}</span></div>
+            <div class="group-items">
+              {%- for item in group.item %}<span>{{ item }}</span>{%- endfor %}
+            </div>
+          </div>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+  </div>
+</section>

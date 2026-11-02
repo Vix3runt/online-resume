@@ -1,0 +1,6 @@
+en:
+  updated: Updated on
+  date_format: "%B %-d, %Y"
+zh:
+  updated: 更新于
+  date_format: "%Y年%-m月%-d日"

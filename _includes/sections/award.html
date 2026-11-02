@@ -1,0 +1,30 @@
+{%- assign section = include.section -%}
+<section class="award">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-award" aria-hidden="true"></i>
+    <h2>{{ section.title | escape }}</h2>
+  </div>
+  <div class="section-content">
+    {%- if section.summary %}<div class="summary">{{ section.summary | markdownify }}</div>{% endif %}
+    {%- if section.items %}
+      <div class="items items--columns">
+        {%- for item in section.items %}
+          <div class="item">
+            {%- if item.name %}
+              <div class="item-line">
+                <div class="award-name item-title">
+                  {%- if item.link %}<a href="{{ item.link | escape }}">{{ item.name | escape }}</a>{% else %}<span>{{ item.name | escape }}</span>{% endif %}
+                </div>
+              </div>
+              <div class="item-line">
+                <div class="awarder item-meta"><span>{{ item.awarder | escape }}</span></div>
+                <div class="date item-aside item-aside--nowrap"><span>{{ item.date | escape }}</span></div>
+              </div>
+              {%- if item.summary %}<div class="summary">{{ item.summary | markdownify }}</div>{% endif %}
+            {%- endif %}
+          </div>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+  </div>
+</section>

@@ -1,0 +1,289 @@
+.icon {
+  --icon: linear-gradient(transparent, transparent);
+  --icon-size: 1em;
+  --icon-width: 1.25em;
+  --icon-vertical-align: -0.125em;
+
+  display: inline-block;
+  inline-size: var(--icon-width);
+  color: inherit;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+}
+
+.icon::before {
+  display: inline-block;
+  inline-size: var(--icon-size);
+  block-size: var(--icon-size);
+  vertical-align: var(--icon-vertical-align);
+  background-color: currentColor;
+  content: "";
+
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Brands */
+.icon-500px {
+  --icon: url("../svgs/brands/500px.svg");
+}
+
+.icon-aboutdotme {
+  --icon: url("../svgs/brands/aboutdotme.svg");
+}
+
+.icon-acm {
+  --icon: url("../svgs/brands/acm.svg");
+}
+
+.icon-artstation {
+  --icon: url("../svgs/brands/artstation.svg");
+}
+
+.icon-arxiv {
+  --icon: url("../svgs/brands/arxiv.svg");
+}
+
+.icon-behance {
+  --icon: url("../svgs/brands/behance.svg");
+}
+
+.icon-bitbucket {
+  --icon: url("../svgs/brands/bitbucket.svg");
+}
+
+.icon-bluesky {
+  --icon: url("../svgs/brands/bluesky.svg");
+}
+
+.icon-codeforces {
+  --icon: url("../svgs/brands/codeforces.svg");
+}
+
+.icon-codewars {
+  --icon: url("../svgs/brands/codewars.svg");
+}
+
+.icon-devdotto {
+  --icon: url("../svgs/brands/devdotto.svg");
+}
+
+.icon-doi {
+  --icon: url("../svgs/brands/doi.svg");
+}
+
+.icon-dribbble {
+  --icon: url("../svgs/brands/dribbble.svg");
+}
+
+.icon-figma {
+  --icon: url("../svgs/brands/figma.svg");
+}
+
+.icon-figshare {
+  --icon: url("../svgs/brands/figshare.svg");
+}
+
+.icon-fiverr {
+  --icon: url("../svgs/brands/fiverr.svg");
+}
+
+.icon-freelancer {
+  --icon: url("../svgs/brands/freelancer.svg");
+}
+
+.icon-gitea {
+  --icon: url("../svgs/brands/gitea.svg");
+}
+
+.icon-gitee {
+  --icon: url("../svgs/brands/gitee.svg");
+}
+
+.icon-github {
+  --icon: url("../svgs/brands/github.svg");
+}
+
+.icon-gitlab {
+  --icon: url("../svgs/brands/gitlab.svg");
+}
+
+.icon-goodreads {
+  --icon: url("../svgs/brands/goodreads.svg");
+}
+
+.icon-googlescholar {
+  --icon: url("../svgs/brands/googlescholar.svg");
+}
+
+.icon-hackerone {
+  --icon: url("../svgs/brands/hackerone.svg");
+}
+
+.icon-huggingface {
+  --icon: url("../svgs/brands/huggingface.svg");
+}
+
+.icon-ieee {
+  --icon: url("../svgs/brands/ieee.svg");
+}
+
+.icon-indeed {
+  --icon: url("../svgs/brands/indeed.svg");
+}
+
+.icon-instagram {
+  --icon: url("../svgs/brands/instagram.svg");
+}
+
+.icon-kaggle {
+  --icon: url("../svgs/brands/kaggle.svg");
+}
+
+.icon-leetcode {
+  --icon: url("../svgs/brands/leetcode.svg");
+}
+
+.icon-line {
+  --icon: url("../svgs/brands/line.svg");
+}
+
+.icon-linkedin {
+  --icon: url("../svgs/brands/linkedin.svg");
+}
+
+.icon-linktree {
+  --icon: url("../svgs/brands/linktree.svg");
+}
+
+.icon-mastodon {
+  --icon: url("../svgs/brands/mastodon.svg");
+}
+
+.icon-medium {
+  --icon: url("../svgs/brands/medium.svg");
+}
+
+.icon-messenger {
+  --icon: url("../svgs/brands/messenger.svg");
+}
+
+.icon-orcid {
+  --icon: url("../svgs/brands/orcid.svg");
+}
+
+.icon-pinterest {
+  --icon: url("../svgs/brands/pinterest.svg");
+}
+
+.icon-pixiv {
+  --icon: url("../svgs/brands/pixiv.svg");
+}
+
+.icon-producthunt {
+  --icon: url("../svgs/brands/producthunt.svg");
+}
+
+.icon-quora {
+  --icon: url("../svgs/brands/quora.svg");
+}
+
+.icon-researchgate {
+  --icon: url("../svgs/brands/researchgate.svg");
+}
+
+.icon-signal {
+  --icon: url("../svgs/brands/signal.svg");
+}
+
+.icon-sinaweibo {
+  --icon: url("../svgs/brands/sinaweibo.svg");
+}
+
+.icon-stackexchange {
+  --icon: url("../svgs/brands/stackexchange.svg");
+}
+
+.icon-stackoverflow {
+  --icon: url("../svgs/brands/stackoverflow.svg");
+}
+
+.icon-strava {
+  --icon: url("../svgs/brands/strava.svg");
+}
+
+.icon-telegram {
+  --icon: url("../svgs/brands/telegram.svg");
+}
+
+.icon-threads {
+  --icon: url("../svgs/brands/threads.svg");
+}
+
+.icon-threema {
+  --icon: url("../svgs/brands/threema.svg");
+}
+
+.icon-tiktok {
+  --icon: url("../svgs/brands/tiktok.svg");
+}
+
+.icon-topcoder {
+  --icon: url("../svgs/brands/topcoder.svg");
+}
+
+.icon-tryhackme {
+  --icon: url("../svgs/brands/tryhackme.svg");
+}
+
+.icon-unsplash {
+  --icon: url("../svgs/brands/unsplash.svg");
+}
+
+.icon-viber {
+  --icon: url("../svgs/brands/viber.svg");
+}
+
+.icon-vk {
+  --icon: url("../svgs/brands/vk.svg");
+}
+
+.icon-wechat {
+  --icon: url("../svgs/brands/wechat.svg");
+}
+
+.icon-whatsapp {
+  --icon: url("../svgs/brands/whatsapp.svg");
+}
+
+.icon-wikipedia {
+  --icon: url("../svgs/brands/wikipedia.svg");
+}
+
+.icon-wire {
+  --icon: url("../svgs/brands/wire.svg");
+}
+
+.icon-x {
+  --icon: url("../svgs/brands/x.svg");
+}
+
+.icon-xing {
+  --icon: url("../svgs/brands/xing.svg");
+}
+
+.icon-youtube {
+  --icon: url("../svgs/brands/youtube.svg");
+}
+
+.icon-zhihu {
+  --icon: url("../svgs/brands/zhihu.svg");
+}
+
+.icon-zotero {
+  --icon: url("../svgs/brands/zotero.svg");
+}

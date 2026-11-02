@@ -1,0 +1,29 @@
+{%- assign section = include.section -%}
+<section class="publication">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-newspaper" aria-hidden="true"></i>
+    <h2>{{ section.title | escape }}</h2>
+  </div>
+  <div class="section-content">
+    {%- if section.summary %}<div class="summary">{{ section.summary | markdownify }}</div>{% endif %}
+    {%- if section.items %}
+      <div class="items">
+        {%- for item in section.items %}
+          <div class="item">
+            {%- if item.title %}
+              {%- assign publication_title = item.title | markdownify | remove: "<p>" | remove: "</p>" -%}
+              <div class="publication-title item-title">
+                {%- if item.link %}<a href="{{ item.link | escape }}">{{ publication_title }}</a>{% else %}<span>{{ publication_title }}</span>{% endif %}
+              </div>
+              {%- if item.authors %}
+                {%- assign authors = item.authors | markdownify | remove: "<p>" | remove: "</p>" -%}
+                <div class="authors item-meta"><span>{{ authors }}</span></div>
+              {%- endif %}
+              {%- if item.conference %}<div class="conference"><span>{{ item.conference | escape }}</span></div>{% endif %}
+            {%- endif %}
+          </div>
+        {%- endfor %}
+      </div>
+    {%- endif %}
+  </div>
+</section>

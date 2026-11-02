@@ -1,0 +1,40 @@
+{%- if jekyll.environment == "production" %}
+  {%- assign google = site.analytics.google %}
+  {%- if google.enable and google.id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ google.id | url_encode }}"></script>
+    <script>
+      var doNotTrack = false;
+      if ({{ google.respect_do_not_track | default: false }}) {
+        var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+        doNotTrack = (dnt == "1" || dnt == "yes");
+      }
+      if (!doNotTrack) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ google.id | escape }}');
+      }
+    </script>
+  {%- endif %}
+
+  {%- assign cloudflare = site.analytics.cloudflare %}
+  {%- if cloudflare.enable and cloudflare.token %}
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "{{ cloudflare.token | escape }}"}'></script>
+  {%- endif %}
+
+  {%- assign umami = site.analytics.umami %}
+  {%- if umami.enable and umami.website_id %}
+    <script defer src="{{ umami.script | default: "https://cloud.umami.is/script.js" | escape }}"
+      data-website-id="{{ umami.website_id | escape }}"
+      {%- if umami.host_url %} data-host-url="{{ umami.host_url | escape }}"{% endif %}
+      {%- if umami.auto_track == true or umami.auto_track == false %} data-auto-track="{{ umami.auto_track }}"{% endif %}
+      {%- if umami.domains %} data-domains="{{ umami.domains | escape }}"{% endif %}
+      {%- if umami.tag %} data-tag="{{ umami.tag | escape }}"{% endif %}
+      {%- if umami.performance %} data-performance="{{ umami.performance | escape }}"{% endif %}
+      {%- if umami.exclude_search %} data-exclude-search="{{ umami.exclude_search | escape }}"{% endif %}
+      {%- if umami.exclude_hash %} data-exclude-hash="{{ umami.exclude_hash | escape }}"{% endif %}
+      {%- if umami.do_not_track %} data-do-not-track="{{ umami.do_not_track }}"{% endif %}>
+    </script>
+  {%- endif %}
+{%- endif %}

@@ -1,19 +1,79 @@
-# Welcome to Jekyll!
-title: Online &hearts; Resume
-url:
-baseurl:
+title: Online Resume
+description: A minimalist online resume.
+url: https://vix3runt.github.io
+baseurl: /online-resume
 
-# Sass setting
-sass:
-  sass_dir: _sass
-  style:    compressed
+default_language: en
+languages:
+  en:
+    locale: en
+    direction: ltr
+    font:
+      preconnect:
+        - https://fonts.googleapis.com
+      crossorigin:
+        - https://fonts.gstatic.com
+      stylesheets:
+        - https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&display=swap
+      family: '"Noto Serif", ui-serif, Georgia, serif'
+  zh:
+    locale: zh
+    direction: ltr
+    font:
+      preconnect:
+        - https://fonts.googleapis.com
+      crossorigin:
+        - https://fonts.gstatic.com
+      stylesheets:
+        - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&display=swap
+      family: '"Noto Serif SC", ui-serif, "Songti SC", STSong, SimSun, serif'
 
-# Custom
-lang: en                    # html lang
-open: true                  # open or close your site
-date_format: "%Y-%m-%d"     # date format
-theme_color: "#1DA1F2"      # your favorite theme color
-allow_search_engines: true  # allow search engines indexing your resume
+private: false              # replace the resume with a private message
+message: Sorry, my resume has been hidden.  # markdown shown in private mode
+math: true                  # enable client-side math rendering
+theme_color: "#115E59"      # accent color
+
+allow_indexing: true        # allow indexing outside private mode
+show_theme_credit: true     # show theme credit in the footer
+
 analytics:
-  google:                   # your google analytics
-  cloudflare:               # your cloudflare analytics
+  umami:
+    enable: false
+    script: https://u.tarrex.com/u.js
+    website_id: af636e2d-31ae-46f1-9071-82b1745143a9
+    host_url:
+    auto_track:
+    domains: tarrex.github.io,tarrex.com
+    tag:
+    performance:
+    exclude_search:
+    exclude_hash:
+    do_not_track: true
+  google:
+    enable: false
+    id:
+    respect_do_not_track: true
+  cloudflare:
+    enable: false
+    token:
+
+features:
+  math:
+    engine: katex         # katex | mathjax
+    version: 0.18.4       # CDN version
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null
+
+liquid:
+  error_mode: strict
+  strict_filters: true
+
+strict_front_matter: true
+
+exclude:
+  - LICENSE
+  - README.md
+  - vendor

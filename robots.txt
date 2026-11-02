@@ -1,4 +1,10 @@
 ---
-layout: robots
+layout: null
 permalink: /robots.txt
 ---
+User-agent: *
+{%- if site.allow_indexing %}
+Allow: /
+{%- else %}
+Disallow: /
+{%- endif %}

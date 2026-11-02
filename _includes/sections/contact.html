@@ -1,0 +1,28 @@
+{%- assign contacts = include.resume.contact -%}
+{%- if contacts %}
+  <div class="contact">
+    {%- for entry in contacts %}
+      {%- for pair in entry %}
+        {%- assign name = pair[0] -%}
+        {%- assign value = pair[1] | strip -%}
+        {%- assign meta = site.data.contact[name] -%}
+        {%- if value != empty and meta %}
+          <div class="contact-item" title="{{ meta.title | escape }}">
+            <i class="{{ meta.icon | escape }}"></i>
+            {%- assign first_character = value | slice: 0 -%}
+            {%- if first_character == "[" %}
+              {{ value | markdownify | remove: "<p>" | remove: "</p>" }}
+            {%- elsif meta.prefix %}
+              {%- assign link = meta.prefix | append: value -%}
+              <a href="{{ link | escape }}" title="{{ link | escape }}">{{ value | escape }}</a>
+            {%- else %}
+              <span>{{ value | escape }}</span>
+            {%- endif %}
+          </div>
+        {%- elsif value != empty %}
+          <!-- Unsupported contact key: {{ name | escape }} -->
+        {%- endif %}
+      {%- endfor %}
+    {%- endfor %}
+  </div>
+{%- endif %}

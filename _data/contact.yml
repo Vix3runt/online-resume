@@ -1,0 +1,262 @@
+location:
+  title: Location
+  icon: fa-solid fa-location-dot
+email:
+  title: Email
+  icon: fa-solid fa-envelope
+  prefix: 'mailto:'
+phone:
+  title: Phone number
+  icon: fa-solid fa-phone
+  prefix: 'tel:'
+website:
+  title: Website
+  icon: fa-solid fa-link
+  prefix: https://
+gender:
+  title: Gender
+  icon: fa-solid fa-venus-mars
+birthday:
+  title: Birthday
+  icon: fa-solid fa-cake-candles
+nationality:
+  title: Nationality
+  icon: fa-solid fa-flag
+visa:
+  title: Visa / work authorization
+  icon: fa-solid fa-passport
+driver_license:
+  title: Driver license
+  icon: fa-solid fa-car
+500px:
+  title: 500px
+  icon: icon icon-500px
+  prefix: https://500px.com/p/
+aboutme:
+  title: about.me
+  icon: icon icon-aboutdotme
+  prefix: https://about.me/
+artstation:
+  title: ArtStation
+  icon: icon icon-artstation
+  prefix: https://www.artstation.com/
+behance:
+  title: Behance
+  icon: icon icon-behance
+  prefix: https://www.behance.net/
+bitbucket:
+  title: Bitbucket
+  icon: icon icon-bitbucket
+  prefix: https://bitbucket.org/
+bluesky:
+  title: Bluesky
+  icon: icon icon-bluesky
+  prefix: https://bsky.app/profile/
+codeforces:
+  title: Codeforces
+  icon: icon icon-codeforces
+  prefix: https://codeforces.com/profile/
+codewars:
+  title: Codewars
+  icon: icon icon-codewars
+  prefix: https://www.codewars.com/users/
+devto:
+  title: DEV Community
+  icon: icon icon-devdotto
+  prefix: https://dev.to/
+dribbble:
+  title: Dribbble
+  icon: icon icon-dribbble
+  prefix: https://dribbble.com/
+figma:
+  title: Figma
+  icon: icon icon-figma
+  prefix: https://www.figma.com/@
+figshare:
+  title: Figshare
+  icon: icon icon-figshare
+  prefix: https://figshare.com/authors/
+fiverr:
+  title: Fiverr
+  icon: icon icon-fiverr
+  prefix: https://www.fiverr.com/
+freelancer:
+  title: Freelancer
+  icon: icon icon-freelancer
+  prefix: https://www.freelancer.com/u/
+gitea:
+  title: Gitea
+  icon: icon icon-gitea
+  prefix: https://gitea.com/
+gitee:
+  title: Gitee
+  icon: icon icon-gitee
+  prefix: https://gitee.com/
+github:
+  title: GitHub
+  icon: icon icon-github
+  prefix: https://github.com/
+gitlab:
+  title: GitLab
+  icon: icon icon-gitlab
+  prefix: https://gitlab.com/
+goodreads:
+  title: Goodreads
+  icon: icon icon-goodreads
+  prefix: https://www.goodreads.com/user/show/
+googlescholar:
+  title: Google Scholar
+  icon: icon icon-googlescholar
+  prefix: https://scholar.google.com/citations?user=
+hackerone:
+  title: HackerOne
+  icon: icon icon-hackerone
+  prefix: https://hackerone.com/
+huggingface:
+  title: Hugging Face
+  icon: icon icon-huggingface
+  prefix: https://huggingface.co/
+indeed:
+  title: Indeed
+  icon: icon icon-indeed
+instagram:
+  title: Instagram
+  icon: icon icon-instagram
+  prefix: https://instagram.com/
+kaggle:
+  title: Kaggle
+  icon: icon icon-kaggle
+  prefix: https://www.kaggle.com/
+leetcode:
+  title: LeetCode
+  icon: icon icon-leetcode
+  prefix: https://leetcode.com/
+line:
+  title: LINE
+  icon: icon icon-line
+  prefix: https://line.me/R/ti/p/@
+linkedin:
+  title: LinkedIn
+  icon: icon icon-linkedin
+  prefix: https://linkedin.com/in/
+linktree:
+  title: Linktree
+  icon: icon icon-linktree
+  prefix: https://linktr.ee/
+mastodon:
+  title: Mastodon
+  icon: icon icon-mastodon
+medium:
+  title: Medium
+  icon: icon icon-medium
+  prefix: https://medium.com/@
+messenger:
+  title: Messenger
+  icon: icon icon-messenger
+  prefix: https://m.me/
+orcid:
+  title: ORCID
+  icon: icon icon-orcid
+  prefix: https://orcid.org/
+pinterest:
+  title: Pinterest
+  icon: icon icon-pinterest
+  prefix: https://www.pinterest.com/
+pixiv:
+  title: Pixiv
+  icon: icon icon-pixiv
+  prefix: https://www.pixiv.net/users/
+producthunt:
+  title: Product Hunt
+  icon: icon icon-producthunt
+  prefix: https://www.producthunt.com/@
+quora:
+  title: Quora
+  icon: icon icon-quora
+  prefix: https://www.quora.com/profile/
+researchgate:
+  title: ResearchGate
+  icon: icon icon-researchgate
+  prefix: https://www.researchgate.net/profile/
+signal:
+  title: Signal
+  icon: icon icon-signal
+sinaweibo:
+  title: 新浪微博
+  icon: icon icon-sinaweibo
+stackexchange:
+  title: Stack Exchange
+  icon: icon icon-stackexchange
+  prefix: https://stackexchange.com/users/
+stackoverflow:
+  title: Stack Overflow
+  icon: icon icon-stackoverflow
+  prefix: https://stackoverflow.com/users/
+strava:
+  title: Strava
+  icon: icon icon-strava
+  prefix: https://www.strava.com/athletes/
+telegram:
+  title: Telegram
+  icon: icon icon-telegram
+  prefix: https://t.me/
+threads:
+  title: Threads
+  icon: icon icon-threads
+  prefix: https://www.threads.net/@
+threema:
+  title: Threema
+  icon: icon icon-threema
+  prefix: https://threema.id/
+tiktok:
+  title: TikTok
+  icon: icon icon-tiktok
+  prefix: https://www.tiktok.com/@
+topcoder:
+  title: Topcoder
+  icon: icon icon-topcoder
+  prefix: https://www.topcoder.com/members/
+tryhackme:
+  title: TryHackMe
+  icon: icon icon-tryhackme
+  prefix: https://tryhackme.com/p/
+unsplash:
+  title: Unsplash
+  icon: icon icon-unsplash
+  prefix: https://unsplash.com/@
+viber:
+  title: Viber
+  icon: icon icon-viber
+vk:
+  title: VK
+  icon: icon icon-vk
+  prefix: https://vk.com/
+wechat:
+  title: WeChat
+  icon: icon icon-wechat
+whatsapp:
+  title: WhatsApp
+  icon: icon icon-whatsapp
+  prefix: https://wa.me/
+wikipedia:
+  title: Wikipedia
+  icon: icon icon-wikipedia
+wire:
+  title: Wire
+  icon: icon icon-wire
+x:
+  title: X
+  icon: icon icon-x
+  prefix: https://x.com/
+xing:
+  title: XING
+  icon: icon icon-xing
+  prefix: https://www.xing.com/profile/
+youtube:
+  title: YouTube
+  icon: icon icon-youtube
+  prefix: https://www.youtube.com/@
+zhihu:
+  title: 知乎
+  icon: icon icon-zhihu
+  prefix: https://www.zhihu.com/people/

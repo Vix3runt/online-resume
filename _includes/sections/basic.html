@@ -1,0 +1,22 @@
+{%- assign resume = include.resume -%}
+<section class="basic{% unless resume.headshot %} basic--centered{% endunless %}">
+  <div class="header">
+    {%- if resume.name %}<h1 class="name">{{ resume.name | escape }}</h1>{% endif %}
+    {%- if resume.title %}<h2 class="title">{{ resume.title | escape }}</h2>{% endif %}
+    {%- include sections/contact.html resume=resume -%}
+  </div>
+  {%- if resume.headshot %}
+    {%- assign headshot = resume.headshot -%}
+    {%- assign headshot_start = headshot | slice: 0, 2 -%}
+    {%- if headshot contains "://" or headshot_start == "//" -%}
+      {%- assign headshot_url = headshot -%}
+    {%- else -%}
+      {%- assign first_character = headshot | slice: 0 -%}
+      {%- if first_character == "/" -%}
+        {%- assign headshot = headshot | remove_first: "/" -%}
+      {%- endif -%}
+      {%- assign headshot_url = headshot | relative_url -%}
+    {%- endif -%}
+    <img class="headshot" src="{{ headshot_url | escape }}" alt="{{ resume.name | escape }}">
+  {%- endif %}
+</section>
